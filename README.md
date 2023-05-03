@@ -1,1 +1,1 @@
-# ejercicioPrueba
+# sales-app
