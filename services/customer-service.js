@@ -2,6 +2,7 @@ import CustomerModel from "../models/customer-model";
 const URL_API = "https://645284a8bce0b0a0f7492280.mockapi.io/"
 
 const btnListarClient = document.querySelector('#listarC');
+const btnRegistroClient= document.querySelector('#RegistrarC');
 
 //Encabezado indica que tipo de recurso le envio al servidor
 const myHeaders = new Headers({
@@ -22,6 +23,13 @@ const postCustomer = (datos)=>{
     }).catch(err=>{
         console.log(err);
     })
+}
+function saveCustomer(){
+    CustomerModel.createdAt='2023-02-02'
+    CustomerModel.
+    CustomerModel
+    CustomerModel
+    CustomerModel
 }
 
 
@@ -52,7 +60,9 @@ const getCostumers = async()=>{
 btnListarClient.addEventListener('click',()=>{
     getCostumers();
 })
-
+btnRegistroClient.addEventListener('click',()=>{
+    saveCustomer();
+})
 function viewData(data){
     console.log(data);
 }
