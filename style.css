@@ -3,4 +3,15 @@
 *{
     font-family: Roboto Mono;
     font-size: large;
+    font-weight: bold;
+    
+}
+.nav item .nav link{
+  color: black;
+}
+header{
+  background-color: white;
+}
+main{
+  background-color: rgb(178, 245, 245);
 }
