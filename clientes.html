@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <script src="js/jquery-3.6.4.slim.js"></script>
   <script src="js/bootstrap/bootstrap.min.js"></script>
-  <script src="services/customer-service.js" defer></script>
+  <script src="services/customer-service.js" type="module" defer></script>
   <title>Document</title>
 </head>
 
@@ -40,17 +40,17 @@
   <main>
     <ul class="nav nav-tabs">
       <li class="nav-item">
-        <a class="nav-link " aria-current="page" href="#" id="RegistrarC">Registrar Cliente</a>
+        <a class="nav-link " aria-current="page" href="#" id="RegistrarC" data-verocultar='["#formCliente",["#listadoClientes","#busacdorClientes"]]'>Registrar Cliente</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#" id="listarC">Listar Clientes</a>
+        <a class="nav-link " href="#" id="listarC" data-verocultar='["#listadoClientes",["#formCliente","#busacdorClientes"]]'>Listar Clientes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="#" id="BuscarC">Buscar</a>
+        <a class="nav-link " href="#" id="BuscarC" data-verocultar='["#busacdorClientes",["#listadoClientes","#formCliente"]]'>Buscar</a>
       </li>
     </ul>
 
-    <div class="container">
+    <div class="container section" id="formCliente">
       <div id="reg" style="display: display;">
         <div class="card">
           <h5 class="card-header">Registro de clientes</h5>
@@ -95,6 +95,12 @@
           </div>
         </div>
       </div>
+    </div>
+    <div id="listadoClientes" class="section">
+      <h1>Listado de Clientes</h1>
+    </div>
+    <div id="busacdorClientes" class="section">
+    <h1>Buscar Cliente</h1>
     </div>
   </main>
 </body>
